@@ -272,7 +272,7 @@ function createItemyDropdown() {
     return dropdown;
 }
 
-function createItemyDropdown() {
+function createRelicDropdown() {
     let dropdown = document.createElement("select");
     
     dropdown.options[0] = new Option("None");
