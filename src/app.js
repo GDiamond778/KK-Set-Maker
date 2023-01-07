@@ -21,7 +21,7 @@ function createTable() {
             th.colSpan = 7;
         }
         if (k == "Nature") {
-            th.colSpan = 3;
+            th.colSpan = 2;
         }
         if (k == "Moves") {
             th.colSpan = 4;
