@@ -93,13 +93,14 @@ function createSet(row) {
 
     set.ability = row[11].value;
     set.item = row[12].value;
-    set.level = row[13].value;
+    set.relic = row[13].value;
+    set.level = row[14].value;
 
     set.moves = {};
-    set.moves.move1 = row[14].value;
-    set.moves.move2 = row[14].value;
-    set.moves.move3 = row[16].value;
-    set.moves.move4 = row[17].value;
+    set.moves.move1 = row[15].value;
+    set.moves.move2 = row[16].value;
+    set.moves.move3 = row[17].value;
+    set.moves.move4 = row[18].value;
 
     return set;
 }
@@ -131,7 +132,8 @@ function createRow() {
 
     let abilityDropdown = createAbilityDropdown();
     let itemDropdown = createItemyDropdown();
-
+    let relicDropdown = createRelicDropdown();
+    
     let level = createInput(1, 100);
     level.value = 50;
 
@@ -141,7 +143,7 @@ function createRow() {
     let moveFour = createMoveDropdown();
 
     elements.push(pokeDropdown, setNameInput, hpEV, energyEV, atkEV, defEV, atkREV, defREV, spdEV);
-    elements.push(posNat, negNat, abilityDropdown, itemDropdown, level, moveOne, moveTwo, moveThree, moveFour);
+    elements.push(posNat, negNat, abilityDropdown, itemDropdown, relicDropdown, level, moveOne, moveTwo, moveThree, moveFour);
 
     allElements.push(elements);
 
@@ -265,6 +267,19 @@ function createItemyDropdown() {
 
     for (let item in items) {
         dropdown.options[dropdown.options.length] = new Option(items[item]);
+    }
+
+    return dropdown;
+}
+
+function createItemyDropdown() {
+    let dropdown = document.createElement("select");
+    
+    dropdown.options[0] = new Option("None");
+    relics.sort();
+
+    for (let relic in relics) {
+        dropdown.options[dropdown.options.length] = new Option(relics[relic]);
     }
 
     return dropdown;
