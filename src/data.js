@@ -989,16 +989,10 @@ var typeModAbilities = {
     },
 }
 
-//var items = ["Heavy Shield", "Heavy Armor", "Power Cuffs", "Health Amulet", "Drain Orb", "Mystic Wand", "Drop of Youth", "Energy Orb", "Chocolate Bar", "Mysterious Dust", "Heavy Shackles", "Thunder Orb",
-         //    "Volcanic Ash", "Rageful Plushie", "Clutch Plushie", "Specialty Boots", "Milkshake", "Kabunga Coffee"];
 
 var items = ["Testing Item"]
-//for (let ty in types) {
- //   items.push(ty.charAt(0).toUpperCase() + ty.slice(1) + " Essence");
-  //  items.push(types[ty].otherName.charAt(0).toUpperCase() + types[ty].otherName.slice(1) + " Pearl");
-  //  items.push(types[ty].otherName.charAt(0).toUpperCase() + types[ty].otherName.slice(1) + " Shell");
-//}
 
+var relics = ["Trap Relic", "Remover Relic", "Pivot Relic"]
 var sets = [];
 
 var changelog = "Swirelle added to the calc.";
